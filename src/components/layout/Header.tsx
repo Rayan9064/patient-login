@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowUp } from 'lucide-react';
+import MedBlock from '../../../public/MedBlock.jpg'
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -46,9 +47,9 @@ const Header = () => {
                             className="cursor-pointer"
                         >
                             <img
-                                src="/api/placeholder/150/50"
+                                src={MedBlock}
                                 alt="Logo"
-                                className="h-12 w-auto"
+                                className="h-12 w-auto object-cover"
                             />
                         </div>
 
